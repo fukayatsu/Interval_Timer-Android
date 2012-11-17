@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+
+<TextView android:id="@+id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5sp" android:layout_gravity="right" android:text="1 of 10"></TextView><TextView android:id="@+id/TextView01" android:layout_height="wrap_content" android:textSize="50sp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:text="00:03:00"></TextView>
+
+<TextView android:id="@+id/TextView04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" Interval:"></TextView><TextView android:id="@+id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="00:01:00" android:textSize="45sp"></TextView>
+
+
+
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginTop="30sp">
+	<Button android:id="@+id/Button01" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="  Edit  "></Button>
+	<Button android:id="@+id/Button02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  Reset  " android:clickable="false"></Button>
+	<Button android:id="@+id/Button03" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Start"><requestFocus/></Button>
+</LinearLayout>
+<TableLayout android:id="@+id/TableLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+	<TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="50sp">
+		<CheckBox android:id="@+id/CheckBox01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Alarm" android:layout_marginLeft="20sp" android:checked="true"></CheckBox>
+		<CheckBox android:id="@+id/CheckBox02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vibration" android:layout_marginLeft="20sp" android:checked="true"></CheckBox>
+	</TableRow>
+		<TableRow android:id="@+id/TableRow02" android:layout_width="wrap_content" android:layout_height="wrap_content"><CheckBox android:id="@+id/CheckBox03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Repeat" android:layout_marginLeft="20sp" android:checked="true"></CheckBox>
+		<CheckBox android:id="@+id/CheckBox04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20sp" android:checked="true" android:text="Interval"></CheckBox>
+	</TableRow>
+</TableLayout>
+
+
+</LinearLayout>
